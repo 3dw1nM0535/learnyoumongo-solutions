@@ -3,7 +3,7 @@ mongo.connect('mongodb://localhost:27017/learnyoumongo', function(err, db) {
     if(err) throw err;
     var users = db.collection('users');
 
-    docs.update({
+    users.update({
         username: "tinatime"
     },{
         $set:{
